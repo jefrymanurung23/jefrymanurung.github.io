@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Technical Test - Front-end Developer (Jefri Manurung)</title>
+    <link href="http://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="top-nav d-flex justify-content-center">
+          <nav>
+            <div class="logo">Panto</div>
+  
+            <ul>
+              <li>
+                <div class="dropdown">
+                  <a href="#">Furniture
+                    <span>
+                      <img src="images/angle-down.svg" alt=""/>
+                    </span>
+                  </a>
+                </div>
+  
+                <ul>
+                  <li><a href="#">Tables</a></li>
+                  <li><a href="#">Seating</a></li>
+                  <li><a href="#">Sleeping or lying</a></li>
+                  <li><a href="#">Entertainment</a></li>
+                </ul>
+              </li>
+  
+              <li>
+                <a href="#">Shop</a>
+              </li>
+  
+              <li>
+                <a href="#">About Us</a>
+              </li>
+  
+              <li>
+                <a href="#">Contact</a>
+              </li>
+            </ul>
+  
+            <div class="cart">
+              <img src="images/handbag-icon.svg" alt=""/>
+              <span class='cart-badge' value="0"></span>
+            </div>
+          </nav>
+        </div>
+
+        <!-- End of desktop navigation menu -->
+
+        <nav class="mobile-nav">
+          <div class="logo">Panto</div>
+          <div class="menu-icon">
+            <img src="images/menu-icon.svg" alt="" />
+          </div>
+        </nav>
+
+        <div class="mobile-menu-container">
+          <div class="close-icon">
+            <img src="images/close-icon.svg" alt="" />
+          </div>
+
+          <ul>
+            <li>
+              <a href="#">Furniture</a>
+            </li>
+
+            <li>
+              <a href="#">Shop</a>
+            </li>
+
+            <li>
+              <a href="#">About Us</a>
+            </li>
+
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- End of mobile navigation menu -->
+
+        <div class="landing-section">
+          <div class="center">
+            <h1>
+              Make your Interior more <br />
+              Minimalistic & Modern
+            </h1>
+
+            <p>
+              Turn your room with panto into a lot more minimalist <br />
+              and modern with ease and speed
+            </p>
+
+            <div class="search">
+              <input class="search-input" type="search" placeholder="Search furniture" required>
+              <div class="search-btn">
+                <img src="images/search.svg" alt=""/>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- End of landing section -->
+
+        <div class="color-pick">
+          <div class="sofa-color-pick">
+            <input type="checkbox" />
+            <div class="btn"></div>
+            <div class="color-tooltip">
+              <div>
+                <input type="radio" id="sofa-color-1" name="sofa-color" value="sofa-color-1" checked>
+                <label for="sofa-color-1">
+                  <span>
+                    <img src="images/check-icon.svg" alt="Checked Icon" />
+                  </span>
+                </label>
+              </div>
+              
+              <div>
+                <input type="radio" id="sofa-color-2" name="sofa-color" value="sofa-color-2">
+                <label for="sofa-color-2">
+                  <span>
+                    <img src="images/check-icon.svg" alt="Checked Icon" />
+                  </span>
+                </label>
+              </div>
+              
+              <div>
+                <input type="radio" id="sofa-color-3" name="sofa-color" value="sofa-color-3">
+                <label for="sofa-color-3">
+                  <span>
+                    <img src="images/check-icon.svg" alt="Checked Icon" />
+                  </span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="vas-color-pick">
+            <input type="checkbox" />
+            <div class="btn"></div>
+            <div class="color-tooltip">
+              <div>
+                <input type="radio" id="vas-color-1" name="vas-color" value="vas-color-1">
+                <label for="vas-color-1">
+                  <span>
+                    <img src="images/check-icon.svg" alt="Checked Icon" />
+                  </span>
+                </label>
+              </div>
+              
+              <div>
+                <input type="radio" id="vas-color-2" name="vas-color" value="vas-color-2">
+                <label for="vas-color-2">
+                  <span>
+                    <img src="images/check-icon.svg" alt="Checked Icon" />
+                  </span>
+                </label>
+              </div>
+              
+              <div>
+                <input type="radio" id="vas-color-3" name="vas-color" value="vas-color-3" checked>
+                <label for="vas-color-3">
+                  <span>
+                    <img src="images/check-icon.svg" alt="Checked Icon" />
+                  </span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- End of color pick -->
+      </div>
+    </header>
+
+    <!-- End of the header section -->
+    
+    <div class="container advantage-section">
+      <div class="row">
+        <div class="col col-12 col-xl-3">
+          <h1 class="headline">
+            Why <br />
+            Choosing Us
+          </h1>
+        </div>
+        <div class="col col-12 col-md-4 col-xl-3">
+          <h1>
+            Luxury facilities
+          </h1>
+          <p>
+            The advantage of hiring a workspace with us is that givees you comfortable service and all-around facilities.
+          </p>
+          <a href="#">More Info
+            <span>
+              <img src="images/right-arrow.svg" alt="" />
+            </span>
+          </a>
+        </div>
+        <div class="col col-12 col-md-4 col-xl-3">
+          <h1>
+            Affordable Price
+          </h1>
+          <p>
+            You can get a workspace of the highst quality at an affordable price and still enjoy the facilities that are oly here.
+          </p>
+          <a href="#">More Info
+            <span>
+              <img src="images/right-arrow.svg" alt="" />
+            </span>
+          </a>
+        </div>
+        <div class="col col-12 col-md-4 col-xl-3">
+          <h1>
+            Many Choices
+          </h1>
+          <p>
+            We provide many unique work space choices so that you can choose the workspace to your liking.
+          </p>
+          <a href="#">More Info
+            <span>
+              <img src="images/right-arrow.svg" alt="" />
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- End of advantage section -->
+
+    <section class="best-product-section">
+      <div class="container">
+        <h1>Best Selling Product</h1>
+        <div class="d-flex justify-content-center">
+          <div class="tabs">
+            <div>
+              <input type="radio" id="tabs-1" name="tabs" value="tabs-1" checked>
+              <label for="tabs-1">
+                <span>
+                  Chair
+                </span>
+              </label>
+            </div>
+            <div>
+              <input type="radio" id="tabs-2" name="tabs" value="tabs-2">
+              <label for="tabs-2">
+                <span>
+                  Bed
+                </span>
+              </label>
+            </div>
+            <div>
+              <input type="radio" id="tabs-3" name="tabs" value="tabs-3">
+              <label for="tabs-3">
+                <span>
+                  Sofa
+                </span>
+              </label>
+            </div>
+            <div>
+              <input type="radio" id="tabs-4" name="tabs" value="tabs-4">
+              <label for="tabs-4">
+                <span>
+                  Lamp
+                </span>
+              </label>
+            </div>
+          </div>
+        </div>
+        
+        <div id="carouselExampleControls" class="carousel slide product-carousel" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="card-list">
+                <div class="row row-cols-2 row-cols-md-4 g-4">
+                  <div class="col">
+                    <div class="card h-100">
+                      <div class="card-img">
+                        <img src="images/sakarias-armchair-black-sporda-dark-gray.png" class="card-img-top" alt="...">
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Chair</p>
+                        <h5 class="card-title">Sakarias Chair</h5>
+                        <div class="rating">
+                          <input type="radio" id="sakarias-star-5" name="rating-sakarias" value="5" /><label for="sakarias-star-5"></label>
+                          <input type="radio" id="sakarias-star-4" name="rating-sakarias" value="4" checked/><label for="sakarias-star-4"></label>
+                          <input type="radio" id="sakarias-star-3" name="rating-sakarias" value="3" /><label for="sakarias-star-3"></label>
+                          <input type="radio" id="sakarias-star-2" name="rating-sakarias" value="2" /><label for="sakarias-star-2"></label>
+                          <input type="radio" id="sakarias-star-1" name="rating-sakarias" value="1" /><label for="sakarias-star-1"></label>
+                        </div>
+                        <h5 class="card-price">392</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-100">
+                      <div class="card-img">
+                        <img src="images/baltsar-chair-black-blue-brown.png" class="card-img-top" alt="...">
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Chair</p>
+                        <h5 class="card-title">Baltsar Armchair</h5>
+                        <div class="rating">
+                          <input type="radio" id="baltasar-star-5" name="rating-baltasar" value="5" checked/><label for="baltasar-star-5"></label>
+                          <input type="radio" id="baltasar-star-4" name="rating-baltasar" value="4" /><label for="baltasar-star-4"></label>
+                          <input type="radio" id="baltasar-star-3" name="rating-baltasar" value="3" /><label for="baltasar-star-3"></label>
+                          <input type="radio" id="baltasar-star-2" name="rating-baltasar" value="2" /><label for="baltasar-star-2"></label>
+                          <input type="radio" id="baltasar-star-1" name="rating-baltasar" value="1" /><label for="baltasar-star-1"></label>
+                        </div>
+                        <h5 class="card-price">299</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-100">
+                      <div class="card-img">
+                        <img src="images/tossberg-chair-metal-black-grey.png" class="card-img-top" alt="...">
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Chair</p>
+                        <h5 class="card-title">Tossberg Chair</h5>
+                        <div class="rating">
+                          <input type="radio" id="tossberg-star-5" name="rating-tossberg" value="5" /><label for="tossberg-star-5"></label>
+                          <input type="radio" id="tossberg-star-4" name="rating-tossberg" value="4" checked/><label for="tossberg-star-4"></label>
+                          <input type="radio" id="tossberg-star-3" name="rating-tossberg" value="3" /><label for="tossberg-star-3"></label>
+                          <input type="radio" id="tossberg-star-2" name="rating-tossberg" value="2" /><label for="tossberg-star-2"></label>
+                          <input type="radio" id="tossberg-star-1" name="rating-tossberg" value="1" /><label for="tossberg-star-1"></label>
+                        </div>
+                        <h5 class="card-price">519</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-100">
+                      <div class="card-img">
+                        <img src="images/ekolsund-gunnared-dark-grey.png" class="card-img-top" alt="...">
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Chair</p>
+                        <h5 class="card-title">Ekolsund Chair</h5>
+                        <div class="rating">
+                          <input type="radio" id="ekolsund-star-5" name="rating-ekolsund" value="5" /><label for="ekolsund-star-5"></label>
+                          <input type="radio" id="ekolsund-star-4" name="rating-ekolsund" value="4" checked/><label for="ekolsund-star-4"></label>
+                          <input type="radio" id="ekolsund-star-3" name="rating-ekolsund" value="3" /><label for="ekolsund-star-3"></label>
+                          <input type="radio" id="ekolsund-star-2" name="rating-ekolsund" value="2" /><label for="ekolsund-star-2"></label>
+                          <input type="radio" id="ekolsund-star-1" name="rating-ekolsund" value="1" /><label for="ekolsund-star-1"></label>
+                        </div>
+                        <h5 class="card-price">921</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card-list">
+                <div class="row row-cols-2 row-cols-md-4 g-4">
+                  <div class="col">
+                    <div class="card h-100">
+                      <div class="card-img">
+                        <img src="images/sakarias-armchair-black-sporda-dark-gray.png" class="card-img-top" alt="...">
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Chair</p>
+                        <h5 class="card-title">Sakarias Chair</h5>
+                        <div class="rating">
+                          <input type="radio" id="sakarias-star-5" name="rating-sakarias" value="5" /><label for="sakarias-star-5"></label>
+                          <input type="radio" id="sakarias-star-4" name="rating-sakarias" value="4" checked/><label for="sakarias-star-4"></label>
+                          <input type="radio" id="sakarias-star-3" name="rating-sakarias" value="3" /><label for="sakarias-star-3"></label>
+                          <input type="radio" id="sakarias-star-2" name="rating-sakarias" value="2" /><label for="sakarias-star-2"></label>
+                          <input type="radio" id="sakarias-star-1" name="rating-sakarias" value="1" /><label for="sakarias-star-1"></label>
+                        </div>
+                        <h5 class="card-price">392</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-100">
+                      <div class="card-img">
+                        <img src="images/baltsar-chair-black-blue-brown.png" class="card-img-top" alt="...">
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Chair</p>
+                        <h5 class="card-title">Baltsar Armchair</h5>
+                        <div class="rating">
+                          <input type="radio" id="baltasar-star-5" name="rating-baltasar" value="5" checked/><label for="baltasar-star-5"></label>
+                          <input type="radio" id="baltasar-star-4" name="rating-baltasar" value="4" /><label for="baltasar-star-4"></label>
+                          <input type="radio" id="baltasar-star-3" name="rating-baltasar" value="3" /><label for="baltasar-star-3"></label>
+                          <input type="radio" id="baltasar-star-2" name="rating-baltasar" value="2" /><label for="baltasar-star-2"></label>
+                          <input type="radio" id="baltasar-star-1" name="rating-baltasar" value="1" /><label for="baltasar-star-1"></label>
+                        </div>
+                        <h5 class="card-price">299</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-100">
+                      <div class="card-img">
+                        <img src="images/tossberg-chair-metal-black-grey.png" class="card-img-top" alt="...">
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Chair</p>
+                        <h5 class="card-title">Tossberg Chair</h5>
+                        <div class="rating">
+                          <input type="radio" id="tossberg-star-5" name="rating-tossberg" value="5" /><label for="tossberg-star-5"></label>
+                          <input type="radio" id="tossberg-star-4" name="rating-tossberg" value="4" checked/><label for="tossberg-star-4"></label>
+                          <input type="radio" id="tossberg-star-3" name="rating-tossberg" value="3" /><label for="tossberg-star-3"></label>
+                          <input type="radio" id="tossberg-star-2" name="rating-tossberg" value="2" /><label for="tossberg-star-2"></label>
+                          <input type="radio" id="tossberg-star-1" name="rating-tossberg" value="1" /><label for="tossberg-star-1"></label>
+                        </div>
+                        <h5 class="card-price">519</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-100">
+                      <div class="card-img">
+                        <img src="images/ekolsund-gunnared-dark-grey.png" class="card-img-top" alt="...">
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Chair</p>
+                        <h5 class="card-title">Ekolsund Chair</h5>
+                        <div class="rating">
+                          <input type="radio" id="ekolsund-star-5" name="rating-ekolsund" value="5" /><label for="ekolsund-star-5"></label>
+                          <input type="radio" id="ekolsund-star-4" name="rating-ekolsund" value="4" checked/><label for="ekolsund-star-4"></label>
+                          <input type="radio" id="ekolsund-star-3" name="rating-ekolsund" value="3" /><label for="ekolsund-star-3"></label>
+                          <input type="radio" id="ekolsund-star-2" name="rating-ekolsund" value="2" /><label for="ekolsund-star-2"></label>
+                          <input type="radio" id="ekolsund-star-1" name="rating-ekolsund" value="1" /><label for="ekolsund-star-1"></label>
+                        </div>
+                        <h5 class="card-price">921</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card-list">
+                <div class="row row-cols-2 row-cols-md-4 g-4">
+                  <div class="col">
+                    <div class="card h-100">
+                      <div class="card-img">
+                        <img src="images/sakarias-armchair-black-sporda-dark-gray.png" class="card-img-top" alt="...">
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Chair</p>
+                        <h5 class="card-title">Sakarias Chair</h5>
+                        <div class="rating">
+                          <input type="radio" id="sakarias-star-5" name="rating-sakarias" value="5" /><label for="sakarias-star-5"></label>
+                          <input type="radio" id="sakarias-star-4" name="rating-sakarias" value="4" checked/><label for="sakarias-star-4"></label>
+                          <input type="radio" id="sakarias-star-3" name="rating-sakarias" value="3" /><label for="sakarias-star-3"></label>
+                          <input type="radio" id="sakarias-star-2" name="rating-sakarias" value="2" /><label for="sakarias-star-2"></label>
+                          <input type="radio" id="sakarias-star-1" name="rating-sakarias" value="1" /><label for="sakarias-star-1"></label>
+                        </div>
+                        <h5 class="card-price">392</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-100">
+                      <div class="card-img">
+                        <img src="images/baltsar-chair-black-blue-brown.png" class="card-img-top" alt="...">
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Chair</p>
+                        <h5 class="card-title">Baltsar Armchair</h5>
+                        <div class="rating">
+                          <input type="radio" id="baltasar-star-5" name="rating-baltasar" value="5" checked/><label for="baltasar-star-5"></label>
+                          <input type="radio" id="baltasar-star-4" name="rating-baltasar" value="4" /><label for="baltasar-star-4"></label>
+                          <input type="radio" id="baltasar-star-3" name="rating-baltasar" value="3" /><label for="baltasar-star-3"></label>
+                          <input type="radio" id="baltasar-star-2" name="rating-baltasar" value="2" /><label for="baltasar-star-2"></label>
+                          <input type="radio" id="baltasar-star-1" name="rating-baltasar" value="1" /><label for="baltasar-star-1"></label>
+                        </div>
+                        <h5 class="card-price">299</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-100">
+                      <div class="card-img">
+                        <img src="images/tossberg-chair-metal-black-grey.png" class="card-img-top" alt="...">
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Chair</p>
+                        <h5 class="card-title">Tossberg Chair</h5>
+                        <div class="rating">
+                          <input type="radio" id="tossberg-star-5" name="rating-tossberg" value="5" /><label for="tossberg-star-5"></label>
+                          <input type="radio" id="tossberg-star-4" name="rating-tossberg" value="4" checked/><label for="tossberg-star-4"></label>
+                          <input type="radio" id="tossberg-star-3" name="rating-tossberg" value="3" /><label for="tossberg-star-3"></label>
+                          <input type="radio" id="tossberg-star-2" name="rating-tossberg" value="2" /><label for="tossberg-star-2"></label>
+                          <input type="radio" id="tossberg-star-1" name="rating-tossberg" value="1" /><label for="tossberg-star-1"></label>
+                        </div>
+                        <h5 class="card-price">519</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-100">
+                      <div class="card-img">
+                        <img src="images/ekolsund-gunnared-dark-grey.png" class="card-img-top" alt="...">
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Chair</p>
+                        <h5 class="card-title">Ekolsund Chair</h5>
+                        <div class="rating">
+                          <input type="radio" id="ekolsund-star-5" name="rating-ekolsund" value="5" /><label for="ekolsund-star-5"></label>
+                          <input type="radio" id="ekolsund-star-4" name="rating-ekolsund" value="4" checked/><label for="ekolsund-star-4"></label>
+                          <input type="radio" id="ekolsund-star-3" name="rating-ekolsund" value="3" /><label for="ekolsund-star-3"></label>
+                          <input type="radio" id="ekolsund-star-2" name="rating-ekolsund" value="2" /><label for="ekolsund-star-2"></label>
+                          <input type="radio" id="ekolsund-star-1" name="rating-ekolsund" value="1" /><label for="ekolsund-star-1"></label>
+                        </div>
+                        <h5 class="card-price">921</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-control">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-center">
+          <a href="#">View All
+            <span>
+              <img src="images/right-arrow.svg" alt="" />
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- End of courses section -->
+
+    <div class="container">
+      <section class="experiences-section">
+        <div class="row">
+          <div class="col col-12 col-lg-7 col-xl-6">
+            <div class="experiences-img">
+              <img src="images/interior-light-room-with-sofa-empty-dark-blue-wall-3d-rendering.png" class="blur" alt="" />
+              <div class="accent"></div>
+              <img src="images/interior-light-room-with-sofa-empty-dark-blue-wall-3d-rendering.png" alt="" />
+            </div>
+          </div>
+          <div class="col col-12 col-lg-5 col-xl-6">
+            <h5>
+              Experiences
+            </h5>
+            <h1>
+              we provide you the best experience
+            </h1>
+            <p>
+              You don’t have to worry about the result because all of these interiors are made by people who are professionals in their fields with an elegant and lucurious style and with premium quality materials
+            </p>
+            <a href="#">More Info
+              <span>
+                <img src="images/right-arrow.svg" alt="" />
+              </span>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="materials-section">
+        <div class="row d-flex flex-row-reverse">
+          <div class="col col-12 col-lg-7 col-xl-6">
+            <div class="materials-img">
+              <img src="images/interior-material.png" alt="" />
+            </div>
+          </div>
+          <div class="col col-12 col-lg-5 col-xl-6">
+            <h5>
+              Materials
+            </h5>
+            <h1>
+              Very serious materials for making furniture
+            </h1>
+            <p>
+              Because panto was very serious about designing furniture for our environment, using a very expensive and famous capital but at a relatively low price
+            </p>
+            <a href="#">More Info
+              <span>
+                <img src="images/right-arrow.svg" alt="" />
+              </span>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="testimonials-section">
+        <div class="d-flex justify-content-center">
+          <h5>
+            Testimonials
+          </h5>
+        </div>
+        <div class="d-flex justify-content-center">
+          <h1>
+            Our Client Reviews
+          </h1>
+        </div>
+        <div id="carouselExampleControlsTestimonials" class="carousel slide testimonials-carousel" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row mt-4">
+                <div class="col-md-4">
+                  <div class="card bg-dark text-white text-center mb-4">
+                    <img src="images/testimonial-1.jpg" alt="" class="card-img">
+                    <div class="card-img-overlay">
+                      <div class="testimonials-overlay">
+                        <img src="images/testimonial-2.png" alt="">
+                        <h2 class="card-title">Bang Upin</h2>
+                        <p class="card-text">Pedagang Asongan</p>
+                        <p class="card-caption">“Terimakasih banyak, kini ruanganku menjadi lebih mewah dan terlihat mahal“</p>
+                        <div class="rating">
+                          <input type="radio" id="upin-star-5" name="rating-upin" value="5" checked/><label for="upin-star-5"></label>
+                          <input type="radio" id="upin-star-4" name="rating-upin" value="4" /><label for="upin-star-4"></label>
+                          <input type="radio" id="upin-star-3" name="rating-upin" value="3" /><label for="upin-star-3"></label>
+                          <input type="radio" id="upin-star-2" name="rating-upin" value="2" /><label for="upin-star-2"></label>
+                          <input type="radio" id="upin-star-1" name="rating-upin" value="1" /><label for="upin-star-1"></label>
+                        </div>
+                      </div>
+                      <img src="images/testimonial-card.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card bg-dark text-white text-center mb-4">
+                    <img src="images/testimonial-2.jpg" alt="" class="card-img">
+                    <div class="card-img-overlay">
+                      <div class="testimonials-overlay">
+                        <img src="images/testimonial-1.png" alt="">
+                        <h2 class="card-title">Ibuk Sukijan</h2>
+                        <p class="card-text">Ibu Rumah Tangga</p>
+                        <p class="card-caption">“Makasih Panto, aku sekarang berasa tinggal di apartment karena barang-barang yang terlihat mewah“</p>
+                        <div class="rating">
+                          <input type="radio" id="sukijan-star-5" name="rating-sukijan" value="5" /><label for="sukijan-star-5"></label>
+                          <input type="radio" id="sukijan-star-4" name="rating-sukijan" value="4" checked/><label for="sukijan-star-4"></label>
+                          <input type="radio" id="sukijan-star-3" name="rating-sukijan" value="3" /><label for="sukijan-star-3"></label>
+                          <input type="radio" id="sukijan-star-2" name="rating-sukijan" value="2" /><label for="sukijan-star-2"></label>
+                          <input type="radio" id="sukijan-star-1" name="rating-sukijan" value="1" /><label for="sukijan-star-1"></label>
+                        </div>
+                      </div>
+                      <img src="images/testimonial-card.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card bg-dark text-white text-center mb-4">
+                    <img src="images/testimonial-3.jpg" alt="" class="card-img">
+                    <div class="card-img-overlay">
+                      <div class="testimonials-overlay">
+                        <img src="images/testimonial-2.png" alt="">
+                        <h2 class="card-title">Mpok Ina</h2>
+                        <p class="card-text">Karyawan Swasta</p>
+                        <p class="card-caption">“Sangat terjangkau untuk kantong saya yang tidak terlalu banyak“</p>
+                        <div class="rating">
+                          <input type="radio" id="ina-star-5" name="rating-ina" value="5" checked/><label for="ina-star-5"></label>
+                          <input type="radio" id="ina-star-4" name="rating-ina" value="4" /><label for="ina-star-4"></label>
+                          <input type="radio" id="ina-star-3" name="rating-ina" value="3" /><label for="ina-star-3"></label>
+                          <input type="radio" id="ina-star-2" name="rating-ina" value="2" /><label for="ina-star-2"></label>
+                          <input type="radio" id="ina-star-1" name="rating-ina" value="1" /><label for="ina-star-1"></label>
+                        </div>
+                      </div>
+                      <img src="images/testimonial-card.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row mt-4">
+                <div class="col-md-4">
+                  <div class="card bg-dark text-white text-center mb-4">
+                    <img src="images/testimonial-1.jpg" alt="" class="card-img">
+                    <div class="card-img-overlay">
+                      <div class="testimonials-overlay">
+                        <img src="images/testimonial-2.png" alt="">
+                        <h2 class="card-title">Bang Upin</h2>
+                        <p class="card-text">Pedagang Asongan</p>
+                        <p class="card-caption">“Terimakasih banyak, kini ruanganku menjadi lebih mewah dan terlihat mahal“</p>
+                        <div class="rating">
+                          <input type="radio" id="upin-star-5" name="rating-upin" value="5" checked/><label for="upin-star-5"></label>
+                          <input type="radio" id="upin-star-4" name="rating-upin" value="4" /><label for="upin-star-4"></label>
+                          <input type="radio" id="upin-star-3" name="rating-upin" value="3" /><label for="upin-star-3"></label>
+                          <input type="radio" id="upin-star-2" name="rating-upin" value="2" /><label for="upin-star-2"></label>
+                          <input type="radio" id="upin-star-1" name="rating-upin" value="1" /><label for="upin-star-1"></label>
+                        </div>
+                      </div>
+                      <img src="images/testimonial-card.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card bg-dark text-white text-center mb-4">
+                    <img src="images/testimonial-2.jpg" alt="" class="card-img">
+                    <div class="card-img-overlay">
+                      <div class="testimonials-overlay">
+                        <img src="images/testimonial-1.png" alt="">
+                        <h2 class="card-title">Ibuk Sukijan</h2>
+                        <p class="card-text">Ibu Rumah Tangga</p>
+                        <p class="card-caption">“Makasih Panto, aku sekarang berasa tinggal di apartment karena barang-barang yang terlihat mewah“</p>
+                        <div class="rating">
+                          <input type="radio" id="sukijan-star-5" name="rating-sukijan" value="5" /><label for="sukijan-star-5"></label>
+                          <input type="radio" id="sukijan-star-4" name="rating-sukijan" value="4" checked/><label for="sukijan-star-4"></label>
+                          <input type="radio" id="sukijan-star-3" name="rating-sukijan" value="3" /><label for="sukijan-star-3"></label>
+                          <input type="radio" id="sukijan-star-2" name="rating-sukijan" value="2" /><label for="sukijan-star-2"></label>
+                          <input type="radio" id="sukijan-star-1" name="rating-sukijan" value="1" /><label for="sukijan-star-1"></label>
+                        </div>
+                      </div>
+                      <img src="images/testimonial-card.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card bg-dark text-white text-center mb-4">
+                    <img src="images/testimonial-3.jpg" alt="" class="card-img">
+                    <div class="card-img-overlay">
+                      <div class="testimonials-overlay">
+                        <img src="images/testimonial-2.png" alt="">
+                        <h2 class="card-title">Mpok Ina</h2>
+                        <p class="card-text">Karyawan Swasta</p>
+                        <p class="card-caption">“Sangat terjangkau untuk kantong saya yang tidak terlalu banyak“</p>
+                        <div class="rating">
+                          <input type="radio" id="ina-star-5" name="rating-ina" value="5" checked/><label for="ina-star-5"></label>
+                          <input type="radio" id="ina-star-4" name="rating-ina" value="4" /><label for="ina-star-4"></label>
+                          <input type="radio" id="ina-star-3" name="rating-ina" value="3" /><label for="ina-star-3"></label>
+                          <input type="radio" id="ina-star-2" name="rating-ina" value="2" /><label for="ina-star-2"></label>
+                          <input type="radio" id="ina-star-1" name="rating-ina" value="1" /><label for="ina-star-1"></label>
+                        </div>
+                      </div>
+                      <img src="images/testimonial-card.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row mt-4">
+                <div class="col-md-4">
+                  <div class="card bg-dark text-white text-center mb-4">
+                    <img src="images/testimonial-1.jpg" alt="" class="card-img">
+                    <div class="card-img-overlay">
+                      <div class="testimonials-overlay">
+                        <img src="images/testimonial-2.png" alt="">
+                        <h2 class="card-title">Bang Upin</h2>
+                        <p class="card-text">Pedagang Asongan</p>
+                        <p class="card-caption">“Terimakasih banyak, kini ruanganku menjadi lebih mewah dan terlihat mahal“</p>
+                        <div class="rating">
+                          <input type="radio" id="upin-star-5" name="rating-upin" value="5" checked/><label for="upin-star-5"></label>
+                          <input type="radio" id="upin-star-4" name="rating-upin" value="4" /><label for="upin-star-4"></label>
+                          <input type="radio" id="upin-star-3" name="rating-upin" value="3" /><label for="upin-star-3"></label>
+                          <input type="radio" id="upin-star-2" name="rating-upin" value="2" /><label for="upin-star-2"></label>
+                          <input type="radio" id="upin-star-1" name="rating-upin" value="1" /><label for="upin-star-1"></label>
+                        </div>
+                      </div>
+                      <img src="images/testimonial-card.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card bg-dark text-white text-center mb-4">
+                    <img src="images/testimonial-2.jpg" alt="" class="card-img">
+                    <div class="card-img-overlay">
+                      <div class="testimonials-overlay">
+                        <img src="images/testimonial-1.png" alt="">
+                        <h2 class="card-title">Ibuk Sukijan</h2>
+                        <p class="card-text">Ibu Rumah Tangga</p>
+                        <p class="card-caption">“Makasih Panto, aku sekarang berasa tinggal di apartment karena barang-barang yang terlihat mewah“</p>
+                        <div class="rating">
+                          <input type="radio" id="sukijan-star-5" name="rating-sukijan" value="5" /><label for="sukijan-star-5"></label>
+                          <input type="radio" id="sukijan-star-4" name="rating-sukijan" value="4" checked/><label for="sukijan-star-4"></label>
+                          <input type="radio" id="sukijan-star-3" name="rating-sukijan" value="3" /><label for="sukijan-star-3"></label>
+                          <input type="radio" id="sukijan-star-2" name="rating-sukijan" value="2" /><label for="sukijan-star-2"></label>
+                          <input type="radio" id="sukijan-star-1" name="rating-sukijan" value="1" /><label for="sukijan-star-1"></label>
+                        </div>
+                      </div>
+                      <img src="images/testimonial-card.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card bg-dark text-white text-center mb-4">
+                    <img src="images/testimonial-3.jpg" alt="" class="card-img">
+                    <div class="card-img-overlay">
+                      <div class="testimonials-overlay">
+                        <img src="images/testimonial-2.png" alt="">
+                        <h2 class="card-title">Mpok Ina</h2>
+                        <p class="card-text">Karyawan Swasta</p>
+                        <p class="card-caption">“Sangat terjangkau untuk kantong saya yang tidak terlalu banyak“</p>
+                        <div class="rating">
+                          <input type="radio" id="ina-star-5" name="rating-ina" value="5" checked/><label for="ina-star-5"></label>
+                          <input type="radio" id="ina-star-4" name="rating-ina" value="4" /><label for="ina-star-4"></label>
+                          <input type="radio" id="ina-star-3" name="rating-ina" value="3" /><label for="ina-star-3"></label>
+                          <input type="radio" id="ina-star-2" name="rating-ina" value="2" /><label for="ina-star-2"></label>
+                          <input type="radio" id="ina-star-1" name="rating-ina" value="1" /><label for="ina-star-1"></label>
+                        </div>
+                      </div>
+                      <img src="images/testimonial-card.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-control">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsTestimonials" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsTestimonials" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- End of the app section -->
+
+    <footer>
+      <div class="container">
+        <div class="row mt-4">
+          <div class="col-md-3">
+            <h1>Panto</h1>
+            <p>The advantage of hiring a workspace with us is that givees you comfortable service and all-around facilities.</p>
+          </div>
+          <div class="col-md-3">
+            <h5>Services</h5>
+            <ul>
+              <li>
+                <a href="#">Email Marketing</a>
+              </li>
+              <li>
+                <a href="#">Campaigns</a>
+              </li>
+              <li>
+                <a href="#">Branding</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h5>Furniture</h5>
+            <ul>
+              <li>
+                <a href="#">Bed</a>
+              </li>
+              <li>
+                <a href="#">Chair</a>
+              </li>
+              <li>
+                <a href="#">All</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h5>Follow Us</h5>
+            <ul>
+              <li>
+                <a href="#">Facebook</a>
+              </li>
+              <li>
+                <a href="#">Twitter</a>
+              </li>
+              <li>
+                <a href="#">Instagram</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="d-flex justify-content-between">
+          <p class="copyright">Copyright © 2021</p>
+          <div class="terms-and-policy">
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <!-- jQuery -->
+    <script src="/path/to/cdn/jquery.slim.min.js"></script>
+  	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  </body>
+</html>
